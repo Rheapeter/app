@@ -11,7 +11,7 @@ from datetime import datetime, date
 from typing import Dict, Any
 
 class TradeUnionAPITester:
-    def __init__(self, base_url="https://vscode-continue.preview.emergentagent.com"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.session = requests.Session()
         self.session.headers.update({'Content-Type': 'application/json'})
